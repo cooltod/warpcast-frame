@@ -1,6 +1,6 @@
 {
     "version": 2,
     "routes": [
-        { "src": "frame", "dest": "frame.js" }
+        { "src": "/api/frame", "dest": "api/frame.js" }
     ]
 }
