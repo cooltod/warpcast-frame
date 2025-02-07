@@ -3,7 +3,7 @@ export default function handler(req, res) {
         "frames": [
             {
                 "image": "https://ibb.co/HL04tRwT",
-                "post_url": "https://coffee-oralle-35.tiiny.sitee",
+                "post_url": "https://coffee-oralle-35.tiiny.site",
                 "buttons": [{ "text": "Click Me", "action": "post" }]
             }
         ]
