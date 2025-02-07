@@ -1,6 +1,11 @@
-// frame.js (server-side)
-   export default function handler(req, res) {
-     const API_KEY = process.env.API_KEY; // Securely stored in Vercel env
-     // Use API_KEY to fetch data from your external API
-     res.json({ data: "secure_response" });
-   }
+// app.js
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("/api/frame") // Calls your server-side endpoint
+    .then(response => response.json())
+    .then(data => {
+      // Update the DOM with fetched data
+      const container = document.getElementById("news-container");
+      container.innerHTML = `<div class="news-card">${data.headline}</div>`;
+    })
+    .catch(error => console.error("Error:", error));
+});
